@@ -1,0 +1,44 @@
+
+html,
+body {
+  height: 100vh;
+  width: 100vw; 
+  background:black !important;
+  color:black; 
+}
+
+
+.navbar {
+background-color:#500050;
+font-family: Arial, Helvetica, sans-serif;
+color:#FFAB02;
+font-size: 30px;
+}
+
+p {
+
+color:green; 
+  
+}
+
+.row{
+margin:40px 40px 40px 40px;
+position: center;
+}
+
+h3{
+  text-justify: center;
+}
+
+
+
+button {
+ margin: 10px 10px 10px 10px; 
+ padding: 10px; 
+ font-size: 20px;
+ background-color: #5E016B;
+ color:#FFAB02; 
+ border: none;
+  border-radius: 10px;
+}
+

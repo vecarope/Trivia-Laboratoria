@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trivia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar
+    <div class=" container-fluid">
+    <a class="navbar-brand" href="#" style='color:white'>
+      <img src="https://www.pngmart.com/files/19/Quiz-Logo-PNG-HD.png" alt="logo" width="100" height="50"
+        class="d-inline-block align-text-top">
+    </a>
+    </div>
+  </nav>
+
+
+  <!--formulario ingreso -->
+  <div class='container-form'>
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://images.ctfassets.net/rvt0uslu5yqp/3T1Ydo75bY7mALEp8Fnod7/83feba4d770ce6179d0f47c9f132b827/Mentimeter_Applications_Web_HowTo_2021-06.jpeg?w=800"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bienvenido a la TRIVIA!</h5>
+        <form class='form-control' id='formIngreso' onSubmit="return false">
+          <input type='text' placeholder='Ingrese su nombre' id='nombreJugador' required></input>
+          <button onClick='ingresar()'> Registrarse </button>
+        </form>
+        <h3 id="mensaje"></h3>
+        </br>
+        <button type='submit' onClick='jugar()' style='display:none' id='btnJugar'>Jugar
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Tarjetas -->
+
+
+  <div class='container' id="preguntas" style="display:none">
+    <form id='form-questions'>
+
+
+
+      <div class='row'>
+        <div class="card-header">
+
+          <div class="card">
+            <div class="img">
+              <img src="https://www.nationalgeographic.com.es/medio/2016/07/20/apolo-tripulacion_afa33873.jpg"
+                width='300px' alt='' />
+            </div>
+            <section>
+              <h3>¿Cual fue el año en que llego el hombre a la luna?</h3>
+                <input type="radio" id="opcion1-1" name="pregunta-1" value="opcion1">
+                <label for="html">1970</label><br>
+                <input type="radio" id="opcion1-2" name="pregunta-1" value="opcion2">
+                <label for="css">1969</label><br>
+                <input type="radio" id="opcion1-3" name="pregunta-1" value="opcion3">
+                <label for="opcion3">1959</label>
+
+              <p id='rest1' </p>
+
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='row'>
+        <div class="card-header">
+          <div class="card">
+            <div class= "img">
+              <img
+                src="https://cdn.todamateria.com/imagenes/800px-color-photographed-b-17e-in-flight-cke.jpg" width= 300px alt=""/>
+              </div>
+
+            <section>
+              <h3>¿Cual fue el año en que terminó la segunda guerra mundial?</h3>
+                <input type="radio" id="opcion2-1" name="pregunta-2" value="opcion1">
+                <label for="opcion1">1945</label><br>
+                <input type="radio" id="opcion2-2" name="pregunta-2" value="opcion2">
+                <label for="opcion2">1949</label><br>
+                <input type="radio" id="opcion2-2" name="pregunta-2" value="opcion3">
+                <label for="opcion3">1970</label>
+              <p id="rest2"></p>
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='row'>
+        <div class="card-header">
+          <div class="card">
+            <div class= "img">
+              <img
+                src= "https://ep00.epimg.net/elpais/imagenes/2014/10/15/album/1413381917_529801_1413382000_album_normal.jpg"width= 300px alt=""/>
+            </div>
+            
+            <section>
+              <h3>¿En que Año fue la caída del muro de Berlín?</h3>
+                <input type="radio" id="opcion3-1" name="pregunta-3" value="opcion1">
+                <label for="html">1960</label><br>
+                <input type="radio" id="opcion3-2" name="pregunta-3" value="opcion2">
+                <label for="css">1979</label><br>
+                <input type="radio" id="opcion3-3" name="pregunta-3" value="opcion3">
+                <label for="opcion3">1989</label>
+              <p id=rest3></p>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button onClick='enviar()' class='button' id='btn' type="button">Responder y resultados </button>
+      </div>
+
+      <button style="display:none" onClick="resetear()" class="button" type='reset' id="btnReset"> Resetear </button>
+    </form>
+  </div>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
